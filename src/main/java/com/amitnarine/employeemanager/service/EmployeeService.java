@@ -14,8 +14,6 @@ import java.util.UUID;
 public class EmployeeService {
     private final EmployeeRepo employeeRepo;
 
-
-
     @Autowired
     public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
@@ -41,7 +39,7 @@ public class EmployeeService {
 
 
     public void deleteEmployee(Long id) {
-        employeeRepo.deleteEmployeeByID(id);
+        employeeRepo.deleteEmployeeById(id);
     }
 
 
